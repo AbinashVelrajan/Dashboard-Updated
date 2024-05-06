@@ -7,7 +7,7 @@ function Header() {
       <div className="bd-search" id="docsearch" data-bd-docs-version="5.3">
         <button
           type="button"
-          className="DocSearch DocSearch-Button border border-0 rounded"
+          className="DocSearch DocSearch-Button border border-0 rounded bg-white"
           aria-label="Search"
         >
           <span className="DocSearch-Button-Container">
@@ -27,7 +27,7 @@ function Header() {
                 stroke-linejoin="round"
               ></path>
             </svg>
-            <span className="DocSearch-Button-Placeholder">Search</span>
+            <span className="DocSearch-Button-Placeholder text-body-tertiary">Search</span>
           </span>
         </button>
       </div>

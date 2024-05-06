@@ -4,6 +4,7 @@ import Header from "./Header";
 import CustomersTable from "./CustomersTable";
 import Analytics from "./Analytics";
 
+
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
           <Header />
           <Analytics />
           <CustomersTable />
+          
         </div>
       </div>
     </>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./CustomersTable.css";
 import { Pagination, Table } from "react-bootstrap";
+import AddEmployee from "./AddEmployee";
 
 function CustomersTable() {
   const tableHeader = [
@@ -73,13 +74,13 @@ function CustomersTable() {
     <div className="container bg-white rounded-5 mt-5">
       <div className="container d-flex justify-content-between align-items-center">
         <div>
-          <p className="mt-3 fw-bold fs-4 mb-1">All Customers</p>
+          <p className="mt-3 fw-bold fs-4 mb-1">All Employees</p>
           <p className="active-members mt-0">Active Members</p>
         </div>
         <div className="bd-search" id="docsearch" data-bd-docs-version="5.3">
           <button
             type="button"
-            className="DocSearch DocSearch-Button border border-0 rounded me-3"
+            className="Search-Customer DocSearch-Button border border-0 rounded"
             aria-label="Search"
           >
             <span className="DocSearch-Button-Container">
@@ -103,7 +104,7 @@ function CustomersTable() {
             </span>
           </button>
           <button
-            className="sort-dropdown btn btn-light dropdown-toggle rounded"
+            className="dropDown-shortby sort-dropdown btn btn-light dropdown-toggle rounded"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -111,7 +112,9 @@ function CustomersTable() {
             <span className="text-secondary">sort by :</span>
             <span className="fw-bold"> Newest</span>
           </button>
+          
         </div>
+        <AddEmployee/>
       </div>
       <div>
         <Table hover>
@@ -139,8 +142,8 @@ function CustomersTable() {
                         className={
                           "rounded " +
                           (row[key] === "active"
-                            ? "border-success bg-success-subtle text-success"
-                            : "border-danger bg-danger-subtle text-danger")
+                            ? "active-button"
+                            : "inactive-button")
                         }
                       >
                         {row[key][0].toUpperCase() + row[key].slice(1)}
