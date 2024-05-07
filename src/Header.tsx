@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   return (
     <div className="container w-100 d-flex justify-content-between mt-4">
-      <p className="fw-bold fw-bold fs-4">Hello Abinash 👋🏻,</p>
+      <p className="fw-bold fw-bold fs-5">Hello Abinash👋🏻,</p>
       <div className="bd-search" id="docsearch" data-bd-docs-version="5.3">
         <form className="DocSearch" role="search">
           <div className="input-group">
