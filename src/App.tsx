@@ -11,7 +11,11 @@ function App() {
       <div className="d-flex">
         <div style={{ width: "25%", height: "10px" }}></div>
         <div style={{ width: "75%" }}>
+
+        <div className="header-component">
           <Header />
+
+        </div>
           <Analytics />
           <CustomersTable />
           

@@ -24,12 +24,14 @@
     margin-right: 0px;
 }
 .active-button{
-    border-color: #00AC4F;
+    /* border-color: #22bb97;
     color: #00AC4F;
-    background-color: #A6E7D8;
+    background-color: #A6E7D8; */
+    width: 100%;
 }
 .inactive-button{
-    border-color: #DF0606;
-    background-color: #FFC5C5;
-    color: #DF0606;
+    border-color: #FFC5C5;
+    /* background-color: #FFC5C5;
+    color: #DF0606; */
+    width: 100%;
 }

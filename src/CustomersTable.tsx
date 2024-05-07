@@ -16,7 +16,7 @@ function CustomersTable() {
     {
       customerName: "Abinash",
       company: "Amazon",
-      phoneNumber: 9363149,
+      phoneNumber: 9363149493,
       email: "abinash499@gamil.com",
       country: "India",
       status: "active",
@@ -24,7 +24,7 @@ function CustomersTable() {
     {
       customerName: "Bala",
       company: "TCS",
-      phoneNumber: 90800212,
+      phoneNumber: 9080021210,
       email: "bala8907@gamil.com",
       country: "America",
       status: "inactive",
@@ -32,7 +32,7 @@ function CustomersTable() {
     {
       customerName: "Muthu",
       company: "WIPRO",
-      phoneNumber: 34989113,
+      phoneNumber: 7498922309,
       email: "muthu3443@gamil.com",
       country: "UAE",
       status: "active",
@@ -40,23 +40,23 @@ function CustomersTable() {
     {
       customerName: "Joe",
       company: "HCL",
-      phoneNumber: 7979271123,
-      email: "ram7856@gamil.com",
+      phoneNumber: 7979273323,
+      email: "joe7856@gamil.com",
       country: "UK",
       status: "active",
     },
     {
       customerName: "Nithish",
       company: "SWOMB",
-      phoneNumber: 971280712,
-      email: "subash293@gamil.com",
+      phoneNumber: 9712807127,
+      email: "nithish293@gamil.com",
       country: "IRAN",
       status: "inactive",
     },
     {
       customerName: "Aasai",
       company: "INFOSYS",
-      phoneNumber: 68565842,
+      phoneNumber: 6856584256,
       email: "aasai499@gamil.com",
       country: "IRAQ",
       status: "active",
@@ -64,7 +64,7 @@ function CustomersTable() {
     {
       customerName: "Vignesh",
       company: "Caterpiller",
-      phoneNumber: 897855736,
+      phoneNumber: 8978557365,
       email: "vihema419@gamil.com",
       country: "SAUDI",
       status: "inactive",
@@ -74,52 +74,62 @@ function CustomersTable() {
     <div className="container bg-white rounded-5 mt-5">
       <div className="container d-flex justify-content-between align-items-center">
         <div>
-          <p className="mt-3 fw-bold fs-4 mb-1">All Employees</p>
+          <p className="mt-3 fw-bold fs-4 mb-1">All Client</p>
           <p className="active-members mt-0">Active Members</p>
         </div>
         <div className="bd-search" id="docsearch" data-bd-docs-version="5.3">
-          <button
-            type="button"
-            className="Search-Customer DocSearch-Button border border-0 rounded"
-            aria-label="Search"
-          >
-            <span className="DocSearch-Button-Container">
-              <svg
-                width="20"
-                height="20"
-                className="DocSearch-Search-Icon me-2"
-                viewBox="0 0 20 20"
-                aria-hidden="true"
-              >
-                <path
-                  d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
-                  stroke="currentColor"
-                  fill="none"
-                  fill-rule="evenodd"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-              <span className="DocSearch-Button-Placeholder">Search</span>
-            </span>
-          </button>
-          <button
-            className="dropDown-shortby sort-dropdown btn btn-light dropdown-toggle rounded"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <span className="text-secondary">sort by :</span>
-            <span className="fw-bold"> Newest</span>
-          </button>
-          
+    <div className="d-flex align-items-center">
+        <form className="DocSearch" role="search">
+            <div className="input-group border border-1 rounded">
+                <input
+                    type="text"
+                    className="DocSearch-Input form-control border border-0 rounded-start bg-white"
+                    aria-label="Search"
+                    placeholder="Search"
+                />
+                <button
+                    type="submit"
+                    className="DocSearch-Button input-group-text bg-white border-0"
+                >
+                    <svg
+                        width="20"
+                        height="20"
+                        className="DocSearch-Search-Icon"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                            stroke="currentColor"
+                            fill="none"
+                            fill-rule="evenodd"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+        </form>
+        
+        <div className="ms-3">
+            <button
+                className="dropDown-shortby sort-dropdown btn btn-light dropdown-toggle rounded"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <span className="text-secondary">sort by :</span>
+                <span className="fw-bold"> Newest</span>
+            </button>
         </div>
+    </div>
+</div>
         <AddEmployee/>
       </div>
       <div>
         <Table hover>
-          <thead>
-            <tr>
+          <thead className="text-center">
+            <tr> 
               <th id="heading-colors">Customer Name</th>
               <th id="heading-colors">Company</th>
               <th id="heading-colors">Phone Number</th>
@@ -128,7 +138,7 @@ function CustomersTable() {
               <th id="heading-colors">Status</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-center">
             {tableData.map((row, idx) => (
               <tr key={idx}>
                 {tableHeader.map((key) =>
@@ -140,10 +150,10 @@ function CustomersTable() {
                     <td>
                       <button
                         className={
-                          "rounded " +
+                          "rounded  " +
                           (row[key] === "active"
-                            ? "active-button"
-                            : "inactive-button")
+                            ? "active-button btn btn-outline-success"
+                            : "inactive-button btn btn-outline-danger")
                         }
                       >
                         {row[key][0].toUpperCase() + row[key].slice(1)}
@@ -156,21 +166,23 @@ function CustomersTable() {
           </tbody>
         </Table>
         <Pagination className="justify-content-end">
-          <Pagination.First />
+          {/* <Pagination.First /> */}
           <Pagination.Prev />
           <Pagination.Item>{1}</Pagination.Item>
-          <Pagination.Ellipsis />
+          <Pagination.Item>{2}</Pagination.Item>
 
-          <Pagination.Item>{10}</Pagination.Item>
-          <Pagination.Item>{11}</Pagination.Item>
-          <Pagination.Item active>{12}</Pagination.Item>
+          <Pagination.Item>{3}</Pagination.Item>
+          <Pagination.Item>{4}</Pagination.Item>
+          <Pagination.Item>{5}</Pagination.Item>
+          {/* <Pagination.Ellipsis /> */}
+          {/* <Pagination.Item active>{12}</Pagination.Item>
           <Pagination.Item>{13}</Pagination.Item>
-          <Pagination.Item disabled>{14}</Pagination.Item>
+          <Pagination.Item disabled>{14}</Pagination.Item> */}
 
           <Pagination.Ellipsis />
           <Pagination.Item>{20}</Pagination.Item>
           <Pagination.Next />
-          <Pagination.Last />
+          {/* <Pagination.Last /> */}
         </Pagination>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Analytics.css";
+
 function Analytics() {
   return (
     <div className="container bg-white rounded-5">
@@ -18,7 +19,7 @@ function Analytics() {
             </svg>
           </div>
           <div className="ms-3 mt-2">
-            <p className="text-black-50 mb-0 fw-light">Total Customers</p>
+            <p className="text-black-50 mb-0 fw-light">Total Cilent</p>
             <p className="fw-bold fs-1 mb-0 lh-1">5,423</p>
             <div className="d-flex align-items-center text-start">
               <span>
@@ -56,7 +57,7 @@ function Analytics() {
             </svg>
           </div>
           <div className="ms-3 mt-2">
-            <p className="text-black-50 mb-0 fw-light">Members</p>
+            <p className="text-black-50 mb-0 fw-light">Cilent Absent</p>
             <p className="fw-bold fs-1 mb-0 lh-1">1,893</p>
             <div className="d-flex align-items-center text-start">
               <span>
@@ -93,8 +94,9 @@ function Analytics() {
             </svg>
           </div>
           <div className="ms-3 mt-2">
-            <p className="text-black-50 mb-0 fw-light">Active Now</p>
+            <p className="text-black-50 mb-0 fw-light">Commitment</p>
             <p className="fw-bold fs-1 mb-0 lh-1">189</p>
+          
           </div>
         </div>
       </div>
