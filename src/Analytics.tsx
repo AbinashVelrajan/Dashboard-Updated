@@ -94,7 +94,7 @@ function Analytics() {
             </svg>
           </div>
           <div className="ms-3 mt-2">
-            <p className="text-black-50 mb-0 fw-light">Commitment</p>
+            <p className="text-black-50 mb-0 fw-light ">Commitment</p>
             <p className="fw-bold fs-1 mb-0 lh-1">189</p>
           
           </div>

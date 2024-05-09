@@ -3,12 +3,14 @@ import "./App.css";
 import Header from "./Header";
 import CustomersTable from "./CustomersTable";
 import Analytics from "./Analytics";
+import Projects from "./Projects";
+import ClinetCard from "./ClinetCard";
 
 
 function App() {
   return (
     <>
-      <div className="d-flex">
+      {/* <div className="d-flex">
         <div style={{ width: "25%", height: "10px" }}></div>
         <div style={{ width: "75%" }}>
 
@@ -21,6 +23,8 @@ function App() {
           
         </div>
       </div>
+      <Projects/> */}
+      <ClinetCard />
     </>
   );
 }
