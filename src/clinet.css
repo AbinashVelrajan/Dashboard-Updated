@@ -1,37 +1,29 @@
 .image-client {
-     height: 50px; 
+    height: 50px; 
     width: 50px; 
     border-radius: 50px;
-    background-color:#225A6C;
-    margin-bottom: 10px;
+    background-color: #225A6C;
   }
   
-  #nancy-name {
-    margin-right: 65px;
-    margin-bottom: 0px;
-    overflow: hidden; /* Ensures long names don't overflow */
-    white-space: nowrap; /* Ensures long names don't wrap */
-    text-overflow: ellipsis; /* Displays ... for long names */
-  }
-  
-  #active-status {
-    margin-left: 50px;
-    margin-bottom: 10px;
-    color: #5eaf6b;
+  .card {
+    border: none;
   }
   
   .view-button {
     width: 80px;
   }
   
-  /* New CSS for input */
-  .input-container {
-    position: relative;
+
+  .card-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   
-  .input-container input[type="date"] {
-    position: absolute;
-    top: 0;
-    right: 0;
+  
+  .project-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
