@@ -1,0 +1,16 @@
+.login-page-container{
+    top: 18rem;
+    right: 6rem;
+}
+/* .login-Page {
+    background-image: url('path/to/your/background/image.jpg'); 
+        background-size: cover;
+    background-position: center;
+    background-color: blue; 
+  } */
+  .background-color-login{
+    background-image: url('https://d2d3qesrx8xj6s.cloudfront.net/img/screenshots/nofeat-6b18e9c4033a4e771bfe0df47337ac8c8840ac86.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

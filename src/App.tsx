@@ -5,16 +5,16 @@ import CustomersTable from "./CustomersTable";
 import Analytics from "./Analytics";
 import Projects from "./Projects";
 import ClinetCard from "./ClinetCard";
-import Landing from "./pages/Landing";
-import LoginPage from "./pages/LoginPage";
 import TaskBar from "./TaskBar/TaskBar";
+import LoginPage from "./LoginPage/LoginPage";
+import LoginPageFront from "./LoginPage/LoginPage";
 
 
 function App() {
   return (
     <>
-    {/* <LoginPage/> */}
-      <div className="d-flex total-dashboard">
+    
+      {/* <div className="d-flex total-dashboard">
         <div style={{ width: "25%", height: "10px" }}></div>
         <div style={{ width: "75%" }}>
 
@@ -29,7 +29,8 @@ function App() {
       </div>
       <Projects/>
       <ClinetCard />
-  <TaskBar/>
+  <TaskBar/> */}
+  <LoginPageFront/>
     </>
   );
 }
