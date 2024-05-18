@@ -1,3 +1,4 @@
+
 import React, { FormEventHandler, useState } from "react";
 import { useColorScheme } from "@mui/joy/styles";
 import Sheet from "@mui/joy/Sheet";
@@ -8,10 +9,12 @@ import Input from "@mui/joy/Input";
 import Button from "@mui/joy/Button";
 import Link from "@mui/joy/Link";
 import "./LoginPagefront.css";
+import { useNavigate } from "react-router-dom";
 
 function LoginPageFront() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
@@ -21,10 +24,11 @@ function LoginPageFront() {
       (email === "mark@gmail.com" && password === "facebook")
     ) {
       // Store email and password in localStorage
-      localStorage.setItem("email", email);
-      localStorage.setItem("password", password);
+      localStorage.setItem("email", "my_secret_token");
+      navigate("*")
+      
       // Optionally, redirect to another page after successful login
-      window.location.href = "/"; // Redirect to the dashboard page after login
+      window.location.href = "/customers"; // Redirect to the dashboard page after login
       console.log("Succefull");
     }
   };

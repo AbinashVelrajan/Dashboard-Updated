@@ -8,6 +8,10 @@ import ClinetCard from "./ClinetCard";
 import TaskBar from "./TaskBar/TaskBar";
 import LoginPage from "./LoginPage/LoginPage";
 import LoginPageFront from "./LoginPage/LoginPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./HomePage";
+import LeaveManagement from "./LeaveManagement";
+import EmployeeDetails from "./EmployeeDetails";
 
 
 function App() {
@@ -30,7 +34,16 @@ function App() {
       <Projects/>
       <ClinetCard />
   <TaskBar/> */}
-  <LoginPageFront/>
+  {/* <LoginPageFront/> */}
+  {/* <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<LoginPageFront />}></Route>
+          <Route path="*" element={<HomePage />}></Route>
+      </Routes>
+  </BrowserRouter> */}
+
+  <LeaveManagement/>
+  
     </>
   );
 }

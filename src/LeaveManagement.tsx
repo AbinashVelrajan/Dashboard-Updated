@@ -3,79 +3,80 @@ import "./CustomersTable.css";
 import { Pagination, Table } from "react-bootstrap";
 import AddEmployee from "./AddEmployee";
 import Analytics from "./Analytics";
+import EmployeeDetails from "./EmployeeDetails";
 
-function CustomersTable() {
+function LeaveManagement() {
   const tableHeader = [
-    "customerName",
-    "company",
-    "phoneNumber",
-    "email",
-    "country",
+    "employeeName",
+    "designation",
+    "date",
+    "shiftTime",
+    "joiningDate",
     "status",
   ] as const;
   const [tableData, settableData] = useState([
     {
-      customerName: "Abinash",
-      company: "Amazon",
-      phoneNumber: 9363149493,
-      email: "abinash499@gamil.com",
-      country: "India",
-      status: "active",
+      employeeName: "Abinash",
+      designation: "Software Engineer",
+      date: "16-05-2024",
+      shiftTime: "General",
+      joiningDate: "01-02-2023",
+      status: "present",
     },
     {
-      customerName: "Bala",
-      company: "TCS",
-      phoneNumber: 9080021210,
-      email: "bala8907@gamil.com",
-      country: "America",
-      status: "inactive",
+      employeeName: "Bala",
+      designation: "UI Developer",
+      date: "16-05-2024",
+      shiftTime: "General",
+      joiningDate: "26-10-2022",
+      status: "absent",
     },
     {
-      customerName: "Muthu",
-      company: "WIPRO",
-      phoneNumber: 7498922309,
-      email: "muthu3443@gamil.com",
-      country: "UAE",
-      status: "active",
+      employeeName: "Muthu",
+      designation: "Full Stack Deveopler",
+      date: "16-05-2024",
+      shiftTime: "General",
+      joiningDate: "22-05-2022",
+      status: "present",
     },
     {
-      customerName: "Joe",
-      company: "HCL",
-      phoneNumber: 7979273323,
-      email: "joe7856@gamil.com",
-      country: "UK",
-      status: "active",
+      employeeName: "Joe",
+      designation: "Backend Developer",
+      date: "16-05-2024",
+      shiftTime: "General",
+      joiningDate: "12-12-2021",
+      status: "present",
     },
     {
-      customerName: "Nithish",
-      company: "SWOMB",
-      phoneNumber: 9712807127,
-      email: "nithish293@gamil.com",
-      country: "IRAN",
-      status: "inactive",
+      employeeName: "Nithish",
+      designation: "Bussiness Analyst",
+      date: "16-05-2024",
+      shiftTime: "General",
+      joiningDate: "06-09-2023",
+      status: "absent",
     },
     {
-      customerName: "Aasai",
-      company: "INFOSYS",
-      phoneNumber: 6856584256,
-      email: "aasai499@gamil.com",
-      country: "IRAQ",
-      status: "active",
+      employeeName: "Aasai",
+      designation: "Tester",
+      date: "16-05-2024",
+      shiftTime: "General",
+      joiningDate: "16-07-2022",
+      status: "present",
     },
     {
-      customerName: "Vignesh",
-      company: "Caterpiller",
-      phoneNumber: 8978557365,
-      email: "vihema419@gamil.com",
-      country: "SAUDI",
-      status: "inactive",
+      employeeName: "Vignesh",
+      designation: "Devops",
+      date: "16-05-2024",
+      shiftTime: "General",
+      joiningDate: "21-04-2021",
+      status: "absent",
     },
   ]);
   return (
     <div className="container bg-white rounded-5 mt-5">
       <div className="container d-flex justify-content-between align-items-center">
         <div>
-          <p className="mt-3 fw-bold fs-4 mb-1">All Client</p>
+          <p className="mt-3 fw-bold fs-4 mb-1">Leave Management</p>
           <p className="active-members mt-0">Active Members</p>
         </div>
         <div className="bd-search" id="docsearch" data-bd-docs-version="5.3">
@@ -125,18 +126,19 @@ function CustomersTable() {
         </div>
     </div>
 </div>
-        <AddEmployee/>
+    
       </div>
       <div>
         <Table hover>
           <thead className="text-center">
             <tr> 
-              <th id="heading-colors">Customer Name</th>
-              <th id="heading-colors">Company</th>
-              <th id="heading-colors">Phone Number</th>
-              <th id="heading-colors">Email</th>
-              <th id="heading-colors">Country</th>
+              <th id="heading-colors">Employee Name</th>
+              <th id="heading-colors">Designation</th>
+              <th id="heading-colors">Date</th>
+              <th id="heading-colors">Shift Time</th>
+              <th id="heading-colors">Joining Date</th>
               <th id="heading-colors">Status</th>
+              <th id="heading-colors">Details</th>
             </tr>
           </thead>
           <tbody className="text-center">
@@ -152,7 +154,7 @@ function CustomersTable() {
                       <button
                         className={
                           "rounded  " +
-                          (row[key] === "active"
+                          (row[key] === "present"
                             ? "active-button btn btn-outline-success"
                             : "inactive-button btn btn-outline-danger")
                         }
@@ -163,6 +165,7 @@ function CustomersTable() {
                     
                   )
                 )}
+                <td ><span><EmployeeDetails/></span></td>
               </tr>
             ))}
           </tbody>
@@ -191,4 +194,4 @@ function CustomersTable() {
   );
 }
 
-export default CustomersTable;
+export default LeaveManagement;
